@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maquiavel Aplicado à Gestão — Silvanio Gois</title>
+  <meta name="author" content="Silvanio Gois">
+  <style>
+    :root{
+      --primary: #27628d;
+      --accent: #f2f6f9;
+      --muted: #6b7c88;
+      --card-bg: #ffffff;
+      --glass: rgba(255,255,255,0.06);
+      --radius: 12px;
+      --shadow: 0 8px 20px rgba(39,98,141,0.12);
+      --max-width: 1100px;
+      --gap: 20px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: light;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#f7fbfd 0%, #ffffff 100%);} 
+
+    header{
+      background:var(--primary);
+      color:var(--accent);
+      padding:20px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow: 0 6px 18px rgba(39,98,141,0.14);
+    }
+    .header-inner{max-width:var(--max-width);width:100%;display:flex;flex-direction:column;gap:6px}
+    .brand{font-weight:700;font-size:16px;letter-spacing:0.2px}
+    .sub{font-size:13px;opacity:0.95}
+
+    main{max-width:var(--max-width);margin:28px auto;padding:18px;display:grid;grid-template-columns:1fr;gap:var(--gap)}
+
+    .intro{display:flex;flex-direction:column;gap:8px;background:linear-gradient(180deg,rgba(39,98,141,0.06), rgba(255,255,255,0.6));padding:18px;border-radius:12px;border:1px solid rgba(39,98,141,0.06)}
+    .intro h1{margin:0;font-size:20px;color:var(--primary)}
+    .intro p{margin:0;color:var(--muted)}
+
+    .card{background:var(--card-bg);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);transition:transform .24s ease, box-shadow .24s ease;border:1px solid rgba(16,24,32,0.03)}
+    .card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,24,32,0.08)}
+    .card h3{margin-top:0;margin-bottom:8px}
+
+    /* Table style */
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th,td{padding:12px 10px;text-align:left;border-bottom:1px solid #eef3f6}
+    th{background:linear-gradient(90deg, rgba(39,98,141,0.06), rgba(39,98,141,0.02));color:var(--primary);font-weight:600}
+    tr:hover td{background:linear-gradient(90deg, rgba(39,98,141,0.03), rgba(39,98,141,0.01));}
+
+    /* Lists */
+    .list{display:grid;gap:10px;list-style:none;padding:0;margin:0}
+    .item{display:flex;gap:12px;align-items:flex-start}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--primary);margin-top:8px;flex:0 0 10px}
+    .item p{margin:0}
+
+    /* Footer */
+    footer{max-width:var(--max-width);margin:28px auto;padding:18px 16px;text-align:center;color:var(--muted);font-size:13px}
+    footer a{color:var(--primary);text-decoration:none;font-weight:600}
+    footer a:hover{text-decoration:underline}
+
+    @media (max-width:900px){
+      header{padding:16px}
+      .header-inner{align-items:flex-start}
+    }
+
+    .muted{color:var(--muted);font-size:13px}
+    .small{font-size:13px}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">Silvanio Gois — Técnico em Administração e Edificações | Graduando em Processos Gerenciais</div>
+      <div class="sub">sg@silvaniogois.com.br | www.silvaniogois.com.br</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro card">
+      <h1>Maquiavel aplicado à gestão — estudo prático</h1>
+      <p class="muted">Minha leitura de Maquiavel não é sobre manipular pessoas, mas sobre assumir decisões firmes, com clareza e estratégia, para garantir resultados sustentáveis. Aqui registro como aplico esses princípios na prática.</p>
+    </section>
+
+    <section class="card">
+      <h3>Quadro comparativo</h3>
+      <table>
+        <thead>
+          <tr><th>Tema</th><th>Senso Comum</th><th>Visão Estratégica (Maquiavel)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Moralidade</td><td>Justiça e exemplo moral</td><td>Pragmatismo: eficácia acima da moral quando necessário</td></tr>
+          <tr><td>Amor x Temor</td><td>Melhor ser amado para inspirar cooperação</td><td>Melhor ser temido (sem ser odiado) para garantir respeito</td></tr>
+          <tr><td>Natureza humana</td><td>Pessoas são boas e confiáveis</td><td>Pessoas são interesseiras e volúveis</td></tr>
+          <tr><td>Imagem</td><td>Ser virtuoso de fato</td><td>Parecer virtuoso é suficiente; controlar narrativa</td></tr>
+          <tr><td>Força</td><td>Confiar em aliados e terceirizados</td><td>Autossuficiência: equipes e recursos internos</td></tr>
+          <tr><td>Flexibilidade</td><td>Coerência e previsibilidade</td><td>Alternar entre astúcia (raposa) e força (leão)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h3>Como aplico na minha gestão</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:12px">
+        <div class="card" style="padding:12px">
+          <h4 style="margin-top:0">Contratação e equipes</h4>
+          <p class="small muted">Inspirado em Maquiavel, evito depender de forças externas para funções estratégicas. Prefiro núcleos próprios e bem preparados.</p>
+          <p class="small"><strong>Exemplo pessoal:</strong> desenvolvo planos de sucessão e treino talentos internos antes de recorrer a consultorias. Resultado: maior previsibilidade e retenção de conhecimento.</p>
+        </div>
+
+        <div class="card" style="padding:12px">
+          <h4 style="margin-top:0">Comunicação</h4>
+          <p class="small muted">Adoto o princípio de que a aparência pesa tanto quanto a essência. Por isso, controlo a narrativa e calibro a transparência de acordo com a estratégia.</p>
+          <p class="small"><strong>Exemplo pessoal:</strong> aplico políticas de comunicação de crises com mensagens precisas e porta-vozes treinados. Resultado: confiança preservada mesmo em cenários críticos.</p>
+        </div>
+
+        <div class="card" style="padding:12px">
+          <h4 style="margin-top:0">Decisões difíceis</h4>
+          <p class="small muted">Como Maquiavel sugere, ajo com firmeza em momentos críticos, avaliando custos políticos e operacionais.</p>
+          <p class="small"><strong>Exemplo pessoal:</strong> utilizo planos de contingência com cortes temporários e redistribuição de responsabilidades. Resultado: estabilidade preservada em momentos de crise.</p>
+        </div>
+      </div>
+
+      <h4 style="margin-top:18px">Checklist que sigo</h4>
+      <ul class="list" style="margin:8px 0">
+        <li class="item"><div class="dot"></div><p>Tenho equipes-chave treinadas internamente para funções críticas (autossuficiência).</p></li>
+        <li class="item"><div class="dot"></div><p>Mantenho plano de comunicação de crise atualizado e testado (controle da narrativa).</p></li>
+        <li class="item"><div class="dot"></div><p>Analiso riscos políticos e operacionais antes de decisões importantes (visão realista).</p></li>
+        <li class="item"><div class="dot"></div><p>Pratico flexibilidade: alterno entre firmeza e astúcia conforme o contexto (raposa e leão).</p></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>Boas práticas que sigo</h3>
+      <p class="small muted">Aplicar Maquiavel na gestão não significa agir sem escrúpulos. Para mim, significa priorizar resultados e ordem, mas dentro de limites éticos claros.</p>
+      <ol class="small">
+        <li>Estabeleço códigos éticos com critérios de exceção definidos para momentos críticos.</li>
+        <li>Pratico decisões rápidas com comunicação objetiva, sem perder a transparência estratégica.</li>
+        <li>Permito auditoria e acompanhamento para garantir legitimidade e evitar abusos.</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© 2025 Silvanio Gois — Todos os direitos reservados | <a href="https://www.silvaniogois.com.br" target="_blank" rel="noopener noreferrer">Retornar ao site</a></div>
+  </footer>
+
+</body>
+</html>
